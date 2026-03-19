@@ -42,7 +42,7 @@ pen.color("white")
 pen.penup()
 pen.hideturtle()
 pen.goto(0,260)
-pen.write ("Score:0 High Score: 0", align="center", font=("Courier", 24 ,"normal" ) )
+pen.write ("Score:0 High Score: 0", align="center", font=("Courier", 24 ,"normal"))
 
 #functions
 def go_up():
@@ -117,10 +117,11 @@ while True:
 
 
         #shorten the delay
-        delay -= 0.001
+        delay = delay - 0.001
 
         #increase the score
-        score += 10
+        score = score + 10
+
         if score > high_score:
             high_score = score
 
